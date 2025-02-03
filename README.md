@@ -21,7 +21,7 @@ A sleek, modern, and responsive multi-step form built using **HTML, CSS, Bootstr
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/multi-step-form.git
+   git clone https://github.com/seager21/multi-step-form.git
    ```
 - Open index.html in your browser.
 
