@@ -1,0 +1,138 @@
+body {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  /* Gradient background for body */
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  max-width: 550px;
+  width: 100%;
+}
+
+.card-body {
+  padding: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.step {
+  display: none;
+}
+
+.step-active {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #ff6a00, #ff8c00);
+  transition: width 0.4s ease;
+}
+
+.form-step-icon {
+  font-size: 20px;
+  background-color: #ff6a00;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.form-step-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 15px;
+  color: #ff6a00;
+}
+
+input,
+textarea {
+  border-radius: 25px;
+  box-shadow: none;
+  border: 2px solid #e0e0e0;
+  padding: 12px 18px;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ff6a00;
+  box-shadow: 0 0 10px rgba(255, 106, 0, 0.5);
+}
+
+.btn-primary,
+.btn-secondary {
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #ff6a00;
+  border-color: #ff6a00;
+}
+
+.btn-primary:hover {
+  background-color: #e65c00;
+  border-color: #e65c00;
+}
+
+.btn-secondary {
+  background-color: #ff8c00;
+  border-color: #ff8c00;
+}
+
+.btn-secondary:hover {
+  background-color: #e77900;
+  border-color: #e77900;
+}
+
+.invalid-feedback {
+  display: block;
+  font-size: 0.875rem;
+  color: #e74c3c;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
+.is-invalid {
+  border: 2px solid #e74c3c !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end,
+.text-start {
+  text-align: right;
+}
